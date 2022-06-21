@@ -14,7 +14,7 @@ public class Hello {
     */
     public static void main(String[] args) {
         
-    Scanner myScanner = new Scanner(System.in);       
+   /* Scanner myScanner = new Scanner(System.in);       
 boolean isValid = false;
 
 do {
@@ -33,8 +33,9 @@ do {
         System.out.println("That was not a whole number!");
     }
 
-} while(!isValid);
-
+} while(!isValid);*/
+String str=" dr ", colorFi ="\".*" +str.toLowerCase()+"\".*";
+        System.out.println(colorFi);
     
     }
 }
