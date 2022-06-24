@@ -1,0 +1,30 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.arainbow;
+
+/**
+ *
+ * @author Ayba
+ */
+public class ARainbow {
+    public static void main(String[] args) {
+        String[] colors = {"Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"};
+        for(String color: colors){
+        System.out.println(color);
+        }
+        
+/*
+        System.out.println(colors[5]);
+        System.out.println(colors[3]);
+        System.out.println(colors[2]);
+        System.out.println(colors[1]);
+        System.out.println(colors[4]);
+        System.out.println(colors[0]);
+        System.out.println(colors[6]);
+*/
+    }
+    
+}

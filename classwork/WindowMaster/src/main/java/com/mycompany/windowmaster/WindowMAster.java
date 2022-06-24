@@ -19,16 +19,18 @@ public class WindowMAster {
     float height;
     float width;
 
+    /*
     // declare String variables to hold the user's height and
     // width input
     String stringHeight;
     String stringWidth;
-
+*/
     // declare other variables
     float areaOfWindow;
     float cost;
     float perimeterOfWindow;
 
+    /*
     // declare and initialize the Scanner
     Scanner myScanner = new Scanner(System.in);
 
@@ -41,7 +43,12 @@ public class WindowMAster {
     // convert String values of height and width to float values
     height = Float.parseFloat(stringHeight);
     width = Float.parseFloat(stringWidth);
-
+    */
+    
+    
+    height=readValue("Please enter window height:");
+    width =readValue("Please enter window width:");
+    
     // calculate the area of the window
     areaOfWindow = height * width;
 
@@ -53,12 +60,43 @@ public class WindowMAster {
     cost = ((3.50f * areaOfWindow) + (2.25f * perimeterOfWindow));
 
     // display the results to the user
-    System.out.println("Window height = " + stringHeight);
-    System.out.println("Window width = " + stringWidth);
+    System.out.println("Window height = " + height);
+    System.out.println("Window width = " + width);
     System.out.println("Window area = " + areaOfWindow);
     System.out.println("Window perimeter = " + perimeterOfWindow);
     System.out.println("Total Cost =  " + cost);
         
+    }
+    public static float readValue(String promt){
+        
+        boolean isValid = false;   
+        String input;
+        Scanner sc = new Scanner(System.in);
+        do {
+        System.out.println(promt);
+        isValid=checkFloat(input = sc.nextLine());
+        
+        }while(!isValid);
+        
+        float floatVal=Float.parseFloat(input);
+        //Make a negative number positive
+        return Math.abs(floatVal);
+    }
+    //check for emptiness and correct float input
+    public static boolean checkFloat (String str){
+        
+        if (str == null || str.isEmpty() || str.trim().isEmpty()) 
+        {
+            System.out.println("Number is null, empty or blank.");
+            return false;
+        }
+        try {
+            float f = Float.parseFloat(str);
+            return true;
+            } catch (NumberFormatException ex) {
+                System.out.println("That not was a whole number!");
+           return false;
+    }
     }
     
 }
