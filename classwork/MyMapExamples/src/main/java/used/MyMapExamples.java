@@ -16,6 +16,7 @@ import java.util.Set;
  */
 public class MyMapExamples {
     public static void main(String[] args) {
+        /*
         Map<String, Integer> populations = new HashMap<>();
         
         populations.put("USA", 200000000);
@@ -42,6 +43,15 @@ public class MyMapExamples {
         for(Integer currentPopulation : populationValues){
             System.out.println(currentPopulation);
         }
+        */
         
+        Map<String, String> foodCombos = new HashMap<>();
+foodCombos.put("PeanutButter","Jelly");
+foodCombos.put("Mac","Cheese");
+foodCombos.put("Ham","Cheese");
+foodCombos.put("Fish","Chips");
+foodCombos.put("Chicken","Waffles");
+String whatAmI = foodCombos.get("Mac");
+        System.out.println(whatAmI);
     }
 }

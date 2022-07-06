@@ -19,7 +19,7 @@ public class MyListExamples {
         
        // System.out.println("List size: "+ stringList.size());
         stringList.add("The first string.");
-        //System.out.println("List size: "+ stringList.size());
+        System.out.println("List size: "+ stringList.size());
         stringList.add("The second string.");
         stringList.add("The third string.");
         stringList.add("The fourt string.");
